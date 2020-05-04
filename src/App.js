@@ -2,25 +2,41 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+    state = {
+        startValue: 0,
+
+    }
+
+    onButtonClick = () => {
+        if (this.state.startValue < 5) {
+            this.setState({
+                startValue: this.state.startValue + 1
+            })
+        }
+    }
+
+
+    onIncClick = () => {
+        this.setState({
+            startValue: 0
+        })
+    }
+
+
+    render = () => {
+
+
+        return (
+            <div className='App'>
+                <div className='wrapper-app'>
+                    <span className='spanStyle'>{this.state.startValue}</span>
+                    <button onClick={this.onButtonClick}>INC</button>
+                    <button onClick={this.onIncClick}>Reset</button>
+                </div>
+            </div>
+        );
+    }
 }
 
 export default App;
