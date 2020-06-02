@@ -29,19 +29,21 @@ class App extends React.Component {
         let colorNumber = this.state.startValue === 5 ? 'spanStyle' : '';
 
         return (
+
             <div className='App'>
-                <div className='wrapper-app'>
+                <div className='General-border'>
                     <div className='display'>
                         <span className={colorNumber}>{this.state.startValue}</span>
 
                     </div>
 
-                    <div className='buttonStyle'>
-                        <button className='inc' onClick={this.onButtonClick}>INC</button>
-                        <button className='reset' onClick={this.onIncClick}>Reset</button>
+                    <div className='Button-border'>
+                        <button className='button' onClick={this.onButtonClick}>INC</button>
+                        <button className='button' onClick={this.onIncClick}>Reset</button>
                     </div>
                 </div>
             </div>
+
         );
     }
 }

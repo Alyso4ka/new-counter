@@ -1,44 +1,72 @@
+
+
 .App {
+    background-color: #252525;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 10px;
-    padding: 2px;
+
+
+
+
 }
 
 
-.wrapper-app {
-    border: 3px solid rgba(0, 255, 255, 0.87);
+.General-border {
+    border: 3px solid #56faff;
     padding: 10px;
     width: 240px;
     height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
 }
 
-
-
-.spanStyle {
-    color: red;
-}
 
 
 .display {
-    border: 3px solid rgba(10, 455, 255, 0.87);
-    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #56faff;
+    width: 230px;
+    height: 110px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: xx-large;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.spanStyle {
+    color: red;
+
 }
 
 
-.buttonStyle {
-    border: 3px solid rgba(10, 455, 255, 0.87);
+
+
+
+
+
+
+.Button-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #56faff;
     height: 80px;
     padding: 10px;
+    border-radius: 10px;
 
 }
 
-.inc {
-    width: 50px;
-    height: 30px;
-    border: 2px solid #56faff;
+.button {
+    width: 70px;
+    height: 40px;
+    border: 5px solid #56faff;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -46,9 +74,3 @@
     margin: 10px
 }
 
-.reset {
-    display: grid;
-    width: 60px;
-    height: 30px;
-    padding: 10px;
-}
